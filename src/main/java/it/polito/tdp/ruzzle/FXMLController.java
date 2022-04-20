@@ -124,7 +124,6 @@ public class FXMLController {
     	for (Pos p : this.letters.keySet()) {
     		this.letters.get(p).setDefaultButton(false);
     	}
-    	
     	model.reset();
     }
     
