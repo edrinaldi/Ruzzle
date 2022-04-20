@@ -45,6 +45,9 @@ public class Model {
 		this.statusTextProperty().set(statusText);
 	}
 
-	
+	public List<Pos> trovaParola(String parola) {
+		Ricerca ricerca = new Ricerca();
+		return ricerca.trovaParola(parola, board);
+	}
 
 }
