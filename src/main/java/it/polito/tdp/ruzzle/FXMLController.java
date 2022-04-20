@@ -130,6 +130,12 @@ public class FXMLController {
     @FXML
     void handleRisolvi(ActionEvent event) {
     	//TODO
+    	this.txtResult.clear();
+    	List<String> tutte = this.model.trovaTutte();
+    	this.txtResult.setText("Ho trovato " + tutte.size() + " parole.\n");
+    	for (String s : tutte) {
+    		this.txtResult.appendText(s + "\n");
+    	}
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
